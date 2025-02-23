@@ -3,3 +3,7 @@
       height: 100vh;
     }
   }
+
+.bg-custom {
+    background-color: #fcf300; /* Color personalizado para fondo */
+}

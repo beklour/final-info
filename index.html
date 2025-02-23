@@ -7,45 +7,77 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
-      crossorigin="anonymous"
-    />
+      crossorigin="anonymous"/>
     <link rel="stylesheet" href="css/estilos.css" />
     <title>HOME</title>
   </head>
   <body>
     <header>
-      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <nav class="navbar navbar-expand-lg navbar-light text-dark bg-custom fs-5">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">HIMYM</a>
-            <button 
-                class="navbar-toggler" 
-                type="button" 
-                data-bs-toggle="collapse" 
-                data-bs-target="#navbarNav" 
-                aria-controls="navbarNav" 
-                aria-expanded="false" 
-                aria-label="Toggle navigation"
-            >
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <div class="navbar-nav">
-                    <a class="nav-item nav-link" href="#">HOME</a>
-                    <a class="nav-item nav-link" href="personajes/index.html">PERSONAJES</a>
-                    <a class="nav-item nav-link" href="novias/index.html">NOVIAS</a>
-                    <a class="nav-item nav-link" href="reglas/index.html">REGLAS</a>
-                    <a class="nav-item nav-link" href="mother.html">LA MADRE</a>
-                    <a class="nav-item nav-link" href="final/index.html">EL FINAL</a>
-                    <a class="nav-item nav-link" href="recepcion.html">RECEPCIÓN</a>
-                </div>
+          <a class="navbar-brand" href="#">HIMYM</a>
+          <button 
+            class="navbar-toggler" 
+            type="button" 
+            data-bs-toggle="collapse" 
+            data-bs-target="#navbarNav" 
+            aria-controls="navbarNav" 
+            aria-expanded="false" 
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <div class="navbar-nav">
+              <a class="nav-item nav-link" href="#">HOME</a>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  PERSONAJES
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="personajes/index.html">¿QUIÉNES SON?</a></li>
+                  <li><a class="dropdown-item" href="personajes/relaciones.html">RELACIONES</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  NOVIAS
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="novias/index.html">LOS AMORES DE TED</a></li>
+                  <li><a class="dropdown-item" href="novias/robin.html">ROBIN</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  REGLAS
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="reglas/index.html">¿REGLAS?</a></li>
+                  <li><a class="dropdown-item" href="reglas/teorias.html">TEORIAS</a></li>
+                  <li><a class="dropdown-item" href="reglas/brocode.html">BROCODE</a></li>
+                  <li><a class="dropdown-item" href="reglas/playbook.html">THE PLAYBOOK</a></li>
+                </ul>
+              </li>
+              <a class="nav-item nav-link" href="mother.html">LA MADRE</a>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  EL FINAL
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="final/index.html">¿EL FINAL?</a></li>
+                  <li><a class="dropdown-item" href="final/finalt.html">FINAL ALTERNATIVO</a></li>
+                </ul>
+              </li>
+              <a class="nav-item nav-link" href="recepcion.html">RECEPCIÓN</a>
             </div>
+          </div>
         </div>
-    </nav>
+      </nav>
       <h1>HOW I MET YOUR MOTHER</h1>
     </header>
 
-    <main class="container">
-      <h2>QUÉ ES</h2>
+    <main class="container d-flex justify-content-center">
+      <div><h2>QUÉ ES</h2>
       <p>
         How I Met Your Mother (HIMYM) es una comedia de situación estadounidense
         creada por Carter Bays y Craig Thomas. Se emitió en CBS desde el 19 de
@@ -54,8 +86,8 @@
         cultural por su estructura narrativa única, humor ingenioso y personajes
         memorables. Se caracteriza por su uso de flashbacks, historias no
         lineales y un estilo que recuerda a una narración de "rompecabezas".
-      </p>
-      <h2>PRODUCCIÓN</h2>
+      </p></div>
+      <div><h2>PRODUCCIÓN</h2>
       <p>
         Los creadores Carter Bays y Craig Thomas se basaron en sus propias
         experiencias de juventud para desarrollar la serie. La producción estuvo
@@ -71,8 +103,8 @@
         (Lily Aldrin). HIMYM destacó por su uso de running gags, referencias a
         la cultura pop y la participación de actores invitados de renombre como
         Britney Spears y Bryan Cranston.
-      </p>
-      <h2>PLOT</h2>
+      </p></div>
+      <div><h2>PLOT</h2>
       <p>
         La historia sigue a Ted Mosby, un arquitecto que, en el año 2030, les
         cuenta a sus hijos la historia de cómo conoció a su madre. A través de
@@ -86,7 +118,9 @@
         finalmente conocer a Tracy McConnell, la madre de sus hijos. El final de
         la serie fue controvertido entre los fanáticos, ya que reveló que Tracy
         falleció y Ted terminó reuniéndose con Robin.
-      </p>
+      </p></div>
+
+      
     </main>
     <footer>
       <section>

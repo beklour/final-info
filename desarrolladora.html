@@ -13,30 +13,61 @@
     <title>DESARROLLADORA</title>
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-lg navbar-light text-dark bg-custom fs-5">
       <div class="container-fluid">
-          <a class="navbar-brand" href="#">HIMYM</a>
-          <button 
-              class="navbar-toggler" 
-              type="button" 
-              data-bs-toggle="collapse" 
-              data-bs-target="#navbarNav" 
-              aria-controls="navbarNav" 
-              aria-expanded="false" 
-              aria-label="Toggle navigation"
-          >
-              <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-              <div class="navbar-nav">
+        <a class="navbar-brand" href="#">HIMYM</a>
+        <button 
+          class="navbar-toggler" 
+          type="button" 
+          data-bs-toggle="collapse" 
+          data-bs-target="#navbarNav" 
+          aria-controls="navbarNav" 
+          aria-expanded="false" 
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <div class="navbar-nav">
             <a class="nav-item nav-link" href="index.html">HOME</a>
-            <a class="nav-item nav-link" href="personajes/index.html"
-              >PERSONAJES</a
-            >
-            <a class="nav-item nav-link" href="novias/index.html">NOVIAS</a>
-            <a class="nav-item nav-link" href="reglas/index.html">REGLAS</a>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                PERSONAJES
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="personajes/index.html">¿QUIÉNES SON?</a></li>
+                <li><a class="dropdown-item" href="personajes/relaciones.html">RELACIONES</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                NOVIAS
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="novias/index.html">LOS AMORES DE TED</a></li>
+                <li><a class="dropdown-item" href="novias/robin.html">ROBIN</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                REGLAS
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="reglas/index.html">¿REGLAS?</a></li>
+                <li><a class="dropdown-item" href="reglas/teorias.html">TEORIAS</a></li>
+                <li><a class="dropdown-item" href="reglas/brocode.html">BROCODE</a></li>
+                <li><a class="dropdown-item" href="reglas/playbook.html">THE PLAYBOOK</a></li>
+              </ul>
+            </li>
             <a class="nav-item nav-link" href="mother.html">LA MADRE</a>
-            <a class="nav-item nav-link" href="final/index.html">EL FINAL</a>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                EL FINAL
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="final/index.html">¿EL FINAL?</a></li>
+                <li><a class="dropdown-item" href="final/finalt.html">FINAL ALTERNATIVO</a></li>
+              </ul>
+            </li>
             <a class="nav-item nav-link" href="recepcion.html">RECEPCIÓN</a>
           </div>
         </div>
