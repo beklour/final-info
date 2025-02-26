@@ -12,11 +12,13 @@
     <link rel="stylesheet" href="css/estilos.css" />
     <title>HOME</title>
   </head>
-  <body>
+  <body class="containerimg fs-5">
+    <div class="alert alert-warning alert-dismissible fade show" role="alert">
+      <strong>Cuidado!</strong> Este sitio web contiene spoilers.
+      <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
     <header>
-      <nav
-        class="navbar navbar-expand-lg navbar-light text-dark bg-custom fs-5"
-      >
+      <nav class="navbar navbar-expand-lg navbar-light text-dark bg-custom fs-5">
         <div class="container-fluid">
           <a class="navbar-brand" href="#">HIMYM</a>
           <button
@@ -185,7 +187,12 @@
         </div>
       </div>
     </div>
-    <h1 class="d-flex justify-content-center mt-5">how i met your mother</h1>
+    
+    <div class="container d-flex justify-content-center mt-5"><img 
+      src="img/iconos/himym.svg"
+      class="d-block w-50"
+      alt="icono himym"
+    /></div>
 
     <main class="container d-flex justify-content-center mt-7 mb-5">
       <div class="container text-center mt-5">
@@ -193,7 +200,7 @@
           <div class="col">
             <div class="card w-100 border border-3 border-dark bg-custom2">
               <div class="card-body">
-                <h5 class="card-title">¿QUÉ ES?</h5>
+                <h5 class="card-title fw-bold">¿QUÉ ES?</h5>
                 <p class="card-text">
                   How I Met Your Mother (HIMYM) es una comedia de situación
                   estadounidense creada por Carter Bays y Craig Thomas. Se
@@ -220,7 +227,7 @@
           <div class="col">
             <div class="card w-100 border border-3 border-dark bg-custom2">
               <div class="card-body">
-                <h5 class="card-title">PRODUCCIÓN</h5>
+                <h5 class="card-title fw-bold">PRODUCCIÓN</h5>
                 <p class="card-text">
                   Los creadores Carter Bays y Craig Thomas se basaron en sus
                   propias experiencias de juventud para desarrollar la serie. La
@@ -245,7 +252,7 @@
           <div class="col">
             <div class="card w-100 border border-3 border-dark bg-custom2">
               <div class="card-body">
-                <h5 class="card-title">PLOT</h5>
+                <h5 class="card-title fw-bold">PLOT</h5>
                 <p class="card-text">
                   La historia sigue a Ted Mosby, un arquitecto que, en el año
                   2030, les cuenta a sus hijos la historia de cómo conoció a su
@@ -270,66 +277,78 @@
             </div>
           </div>
         </div>
-        <div class="container">
-          <div class="row align-items-center mt-5">
+        <!-- tarjetas -->
+        <div class="container d-flex justify-content-center mt-5">
+          <div class="row row-cols-1 row-cols-md-3 g-4 justify-content-center">
             <div class="col">
-              <a
-                href="personajes/index.html"
-                class="btn btn-outline-dark"
-                role="button"
-                aria-pressed="true"
-                >PERSONAJES</a
-              >
+              <div class="card h-100 border border-3 border-dark" style="width: 18rem">
+                <div class="card-body">
+                  <h5 class="card-title">Los Personajes</h5>
+                  <p class="card-text">
+                    Si quieres saber un poco más sobre quienes son los protagonistas de esta divertida sitcom...
+                  </p>
+                  <a href="personajes/index.html" class="btn bg-custom">Sigue por aquí</a>
+                </div>
+              </div>
             </div>
             <div class="col">
-              <a
-                href="novias/index.html"
-                class="btn btn-outline-dark"
-                role="button"
-                aria-pressed="true"
-                >NOVIAS</a
-              >
+              <div class="card h-100 border border-3 border-dark" style="width: 18rem">
+                <div class="card-body">
+                  <h5 class="card-title">Las Novias</h5>
+                  <p class="card-text">
+                    Si quieres saber un poco más sobre quienes fueron los amores del protagonista de esta divertida sitcom...
+                  </p>
+                  <a href="novias/index.html" class="btn bg-custom">Sigue por aquí</a>
+                </div>
+              </div>
             </div>
             <div class="col">
-              <a
-                href="reglas/index.html"
-                class="btn btn-outline-dark"
-                role="button"
-                aria-pressed="true"
-                >REGLAS</a
-              >
-            </div>
-          </div>
-          <div class="row align-items-center m-3">
-            <div class="col">
-              <a
-                href="mother.html"
-                class="btn btn-outline-dark"
-                role="button"
-                aria-pressed="true"
-                >LA MADRE</a
-              >
+              <div class="card h-100 border border-3 border-dark" style="width: 18rem">
+                <div class="card-body">
+                  <h5 class="card-title">Las reglas</h5>
+                  <p class="card-text">
+                    Si quieres saber un poco más sobre por qué existen y cuáles son las reglas de esta divertida sitcom...
+                  </p>
+                  <a href="reglas/index.html" class="btn bg-custom">Sigue por aquí</a>
+                </div>
+              </div>
             </div>
             <div class="col">
-              <a
-                href="final/index.html"
-                class="btn btn-outline-dark"
-                role="button"
-                aria-pressed="true"
-                >EL FINAL</a
-              >
+              <div class="card h-100 border border-3 border-dark" style="width: 18rem">
+                <div class="card-body">
+                  <h5 class="card-title">La Madre</h5>
+                  <p class="card-text">
+                    Si quieres saber, finalmente, quién es "La Madre" en divertida sitcom...
+                  </p>
+                  <a href="mother.html" class="btn bg-custom">Sigue por aquí</a>
+                </div>
+              </div>
             </div>
             <div class="col">
-              <a
-                href="recepcion.html"
-                class="btn btn-outline-dark"
-                role="button"
-                aria-pressed="true"
-                >RECEPCIÓN</a
-              >
+              <div class="card h-100 border border-3 border-dark" style="width: 18rem">
+                <div class="card-body">
+                  <h5 class="card-title">El Final</h5>
+                  <p class="card-text">
+                    Si quieres saber un poco más sobre el final de esta divertida sitcom...
+                  </p>
+                  <a href="final/index.html" class="btn bg-custom">Sigue por aquí</a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100 border border-3 border-dark" style="width: 18rem">
+                <div class="card-body">
+                  <h5 class="card-title">La Recepción</h5>
+                  <p class="card-text">
+                    Si quieres saber un poco más cómo impacto en la cultura popular esta divertida sitcom...
+                  </p>
+                  <a href="recepcion.html" class="btn bg-custom">Sigue por aquí</a>
+                </div>
+              </div>
             </div>
           </div>
         </div>
+        <!-- fin tarjetas -->
       </div>
     </main>
     <footer class="container-fluid bg-custom">
@@ -345,13 +364,17 @@
             >
           </div>
           <div class="col-4 col-sm-2">
-            <a href="https://www.facebook.com/OfficialHowIMetYourMother/">
+            <a
+              href="https://www.facebook.com/OfficialHowIMetYourMother/"
+              target="_blank"
+            >
               <img src="img/iconos/fb.png" alt="facebook" class="img-fluid" />
             </a>
           </div>
           <div class="col-4 col-sm-2">
             <a
               href="https://www.disneyplus.com/es-ar/series/how-i-met-your-mother/3kpBeRQiKjkq"
+              target="_blank"
             >
               <img
                 src="img/iconos/disney.png"
@@ -361,7 +384,7 @@
             </a>
           </div>
           <div class="col-4 col-sm-2">
-            <a href="https://www.netflix.com/title/70143824">
+            <a href="https://www.netflix.com/title/70143824" target="_blank">
               <img
                 src="img/iconos/netflix.png"
                 alt="netflix"
@@ -372,6 +395,7 @@
           <div class="col-4 col-sm-2">
             <a
               href="https://www.primevideo.com/-/es/detail/How-I-met-your-mother/0HX4L62NMBMKP5QXU8QNR8958G"
+              target="_blank"
             >
               <img
                 src="img/iconos/prime.png"

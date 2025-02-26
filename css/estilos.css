@@ -9,9 +9,13 @@
 }
 
 .bg-custom2 {
-  background-color: #fcf300ad; /* Color personalizado para fondo */
+  background-color: #fcf400; /* Color personalizado para fondo */
 }
 
-.bg-custom3 {
-  background-color: #1c0c00; /* Color personalizado para fondo */
+.containerimg {
+  background-image: url(../img/fondo1.jpeg);
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+  width: 100%; /* Asegura que el contenedor ocupe todo el ancho de la página */
 }
