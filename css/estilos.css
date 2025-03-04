@@ -19,3 +19,6 @@
   background-repeat: no-repeat;
   width: 100%; /* Asegura que el contenedor ocupe todo el ancho de la página */
 }
+.accordion-border-color { 
+border-color:#fcf300;
+};
