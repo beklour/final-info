@@ -12,203 +12,230 @@
     <link rel="stylesheet" href="../css/estilos.css" />
     <title>FINAL</title>
   </head>
-  <body>
-    <nav class="navbar navbar-expand-lg navbar-light text-dark bg-custom fs-5">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">HIMYM</a>
-        <button 
-          class="navbar-toggler" 
-          type="button" 
-          data-bs-toggle="collapse" 
-          data-bs-target="#navbarNav" 
-          aria-controls="navbarNav" 
-          aria-expanded="false" 
-          aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <div class="navbar-nav">
-            <a class="nav-item nav-link" href="../index.html">HOME</a>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                PERSONAJES
-              </a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="../personajes/index.html">¿QUIÉNES SON?</a></li>
-                <li><a class="dropdown-item" href="../personajes/relaciones.html">RELACIONES</a></li>
-              </ul>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                NOVIAS
-              </a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="../novias/index.html">LOS AMORES DE TED</a></li>
-                <li><a class="dropdown-item" href="../novias/robin.html">ROBIN</a></li>
-              </ul>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                REGLAS
-              </a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="../reglas/index.html">¿REGLAS?</a></li>
-                <li><a class="dropdown-item" href="../reglas/teorias.html">TEORIAS</a></li>
-                <li><a class="dropdown-item" href="../reglas/brocode.html">BROCODE</a></li>
-                <li><a class="dropdown-item" href="../reglas/playbook.html">THE PLAYBOOK</a></li>
-              </ul>
-            </li>
-            <a class="nav-item nav-link" href="../mother.html">LA MADRE</a>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                EL FINAL
-              </a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="index.html">¿EL FINAL?</a></li>
-                <li><a class="dropdown-item" href="finalt.html">FINAL ALTERNATIVO</a></li>
-              </ul>
-            </li>
-            <a class="nav-item nav-link" href="../recepcion.html">RECEPCIÓN</a>
+  <body class="containerimg fs-5">
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light text-dark bg-custom fs-5">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">HIMYM</a>
+          <button 
+            class="navbar-toggler" 
+            type="button" 
+            data-bs-toggle="collapse" 
+            data-bs-target="#navbarNav" 
+            aria-controls="navbarNav" 
+            aria-expanded="false" 
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <div class="navbar-nav">
+              <a class="nav-item nav-link" href="../index.html">HOME</a>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  PERSONAJES
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="../personajes/index.html">¿QUIÉNES SON?</a></li>
+                  <li><a class="dropdown-item" href="../personajes/relaciones.html">RELACIONES</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  NOVIAS
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="../novias/index.html">LOS AMORES DE TED</a></li>
+                  <li><a class="dropdown-item" href="../novias/robin.html">ROBIN</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  REGLAS
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="../reglas/index.html">¿REGLAS?</a></li>
+                  <li><a class="dropdown-item" href="../reglas/teorias.html">TEORIAS</a></li>
+                  <li><a class="dropdown-item" href="../reglas/brocode.html">BROCODE</a></li>
+                  <li><a class="dropdown-item" href="../reglas/playbook.html">THE PLAYBOOK</a></li>
+                </ul>
+              </li>
+              <a class="nav-item nav-link" href="../mother.html">LA MADRE</a>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  EL FINAL
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="index.html">¿EL FINAL?</a></li>
+                  <li><a class="dropdown-item" href="finalt.html">FINAL ALTERNATIVO</a></li>
+                </ul>
+              </li>
+              <a class="nav-item nav-link" href="../recepcion.html">RECEPCIÓN</a>
+            </div>
           </div>
         </div>
+      </nav>
+    </header>
+    <!-- Titulo -->
+    <div class="container mt-5 text-center">
+      <div class="row d-flex justify-content-center">
+        <img src="img/final.png" class="d-block w-50 mt-6 mb-6" alt="final" />
+        <img src="img/kids.jpeg" class="d-block w-75 mt-4 mb-4" alt="final" />
       </div>
-    </nav>
-    <main class="container">
-      <h1>HOW I MET YOUR MOTHER</h1>
+    </div>
+    <!-- Titulo -->
+    <main class="container d-flex justify-content-center mt-7 mb-5 bg-transparent">
+      <div class="row d-flex justify-content-center bg-transparent">
+        <!-- last forever -->
+        <div class="container d-flex justify-content-center mt-5 text-center bg-transparent">
+          <img src="img/last.png" class="d-block w-75 mt-1 mb-1" alt="final" />
+        </div>
+        <!-- last forever -->
 
-      <h2>El Final de "How I Met Your Mother" y su Recepción</h2>
+        <!-- Primera parte -->
+        <div class="row justify-content-center align-items-center text-center mt-5 bg-transparent">
+          <div class="card card-body bg-custom2 p-3 mt-3 w-100 mx-auto">
+            <p class="card-text">
+              <strong>"How I Met Your Mother"</strong> concluye su viaje televisivo
+              con el episodio final titulado "Last Forever", dividido en dos partes,
+              que se emitió el 31 de marzo de 2014. El episodio final abarca varios
+              años y cierra las historias de los personajes principales, revelando el
+              desenlace de la serie que los fans habían esperado durante nueve
+              temporadas. El final es un punto culminante cargado de emociones, giros
+              sorprendentes y una mezcla de reacciones por parte del público.
+            </p>
+          </div>
+        </div>
+        <!-- Fin Primera parte -->
 
-      <p>
-        <strong>"How I Met Your Mother"</strong> concluye su viaje televisivo
-        con el episodio final titulado "Last Forever", dividido en dos partes,
-        que se emitió el 31 de marzo de 2014. El episodio final abarca varios
-        años y cierra las historias de los personajes principales, revelando el
-        desenlace de la serie que los fans habían esperado durante nueve
-        temporadas. El final es un punto culminante cargado de emociones, giros
-        sorprendentes y una mezcla de reacciones por parte del público.
-      </p>
+        <!-- desglozando -->
+        <div class="container d-flex justify-content-center mt-5 text-center bg-transparent">
+          <img src="img/resume.png" class="d-block w-75 mt-3 mb-1" alt="final" />
+        </div>
+        <!-- desglozando -->
 
-      <h3>Resumen del Episodio Final</h3>
+        <!-- resumen -->
+        <div class="bg-transparent">
+          <div class="row mt-5 bg-transparent">
+            <!-- boda barney y robin -->
+            <div class="card mb-3 bg-custom">
+              <div class="row g-0">
+                <div class="col-12 col-md-4 d-flex justify-content-center align-items-center">
+                  <img src="img/wedding.jpg" class="img-fluid rounded m-2 ms-0" alt="ted" />
+                </div>
+                <div class="col-12 col-md-8 d-flex justify-content-center align-items-center">
+                  <div class="card-body">
+                    <h5 class="card-title">El Matrimonio de Barney y Robin</h5>
+                    <p class="card-text">
+                      El episodio comienza con la culminación de la boda de Barney Stinson y Robin Scherbatsky, evento que ha sido el centro de la novena temporada. A medida que avanzan los años, se revela que el matrimonio de Barney y Robin no dura mucho tiempo debido a las demandas de la carrera de Robin como periodista, que la llevan a viajar constantemente. La relación, comienza a resentirse por la distancia y las obligaciones personales. La celebración de su boda, cargada de ilusión y felicidad, contrasta fuertemente con el inevitable declive que se produce al ver cómo sus caminos se separan. Finalmente, la pareja se divorcia, lo que marca el primer giro significativo del episodio final.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- boda barney y robin -->
 
-      <h4>El Matrimonio de Barney y Robin</h4>
+            <!-- Marshall y Lily -->
+            <div class="card mb-3 bg-custom">
+              <div class="row g-0">
+                <div class="col-12 col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title">Marshall Eriksen y Lily Aldrin</h5>
+                    <p class="card-text">
+                      Al final de la serie, Marshall y Lily se presentan como el corazón constante y resiliente del grupo. La pareja se agranda con la llegada de más hijos y Marshall alcanza su anhelado sueño de convertirse en juez, un logro que refleja años de esfuerzo, integridad y pasión por la justicia. Más allá de sus éxitos individuales, lo que realmente resalta es la forma en que ambos se complementan y se sostienen mutuamente ante cada adversidad. Lily, con su creatividad y sensibilidad, aporta el equilibrio perfecto a la firmeza y el optimismo de Marshall, haciendo que cada desafío se enfrente en equipo, logrando superar cualquier obstáculo y perdurar a lo largo del tiempo. En el epílogo, se muestra cómo han construido un hogar lleno de recuerdos cultivado con paciencia y dedicación.
+                    </p>
+                  </div>
+                </div>
+                <div class="col-12 col-md-4">
+                  <img src="img/lilymarsh.jpg" class="img-fluid rounded m-2 ms-0" alt="marshall" />
+                </div>
+              </div>
+            </div>
+            <!-- Marshall y Lily -->
 
-      <p>
-        El episodio comienza con la culminación de la boda de Barney Stinson y
-        Robin Scherbatsky, evento que ha sido el centro de la novena temporada.
-        A medida que avanzan los años, se revela que el matrimonio de Barney y
-        Robin no dura mucho tiempo debido a las demandas de la carrera de Robin
-        como periodista, que la llevan a viajar constantemente. Finalmente, la
-        pareja se divorcia, lo que marca el primer giro significativo del
-        episodio final.
-      </p>
+            <!-- Barney -->
+            <div class="card mb-3 bg-custom">
+              <div class="row g-0">
+                <div class="col-12 col-md-4 d-flex justify-content-center align-items-center">
+                  <img src="img/barney.jpg" class="img-fluid rounded m-2 ms-0" alt="ted" />
+                </div>
+                <div class="col-12 col-md-8 d-flex justify-content-center align-items-center">
+                  <div class="card-body">
+                    <h5 class="card-title">Barney Stinson</h5>
+                    <p class="card-text">
+                      Después de divorciarse, Barney Stinson retoma su estilo de vida de conquistas sin mayores compromisos. Sin embargo, su mundo da un giro inesperado cuando una de sus aventuras se convierte en algo más: la mujer con la que tuvo un encuentro queda embarazada y, posteriormente, da a luz a su hija, Ellie. Este acontecimiento marca el inicio de una transformación en Barney, quien se enfrenta a la realidad de la paternidad. Poco a poco, el hombre conocido por su faceta de mujeriego impenitente comienza a descubrir un nuevo lado, más sensible y comprometido. Con la llegada de Ellie, su vida se redefine, y asume la responsabilidad de ser un padre dedicado, encontrando en ese rol un motivo para evolucionar y dejar atrás sus antiguos hábitos.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Barney -->
 
-      <h4>El Futuro de los Personajes</h4>
+            <!-- Robin Scherbatsky -->
+            <div class="card bg-custom">
+              <div class="row g-0">
+                <div class="col-12 col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title">Robin Scherbatsky</h5>
+                    <p class="card-text">
+                      Después de su divorcio de Barney en 2016 debido a las exigencias de su carrera periodística, Robin Scherbatsky se distanció del grupo de amigos. Su éxito profesional la llevó a viajar constantemente, lo que dificultó mantener las relaciones cercanas con ellos. Durante una fiesta de Halloween en la azotea, Robin, al ver a Ted y a Tracy felices juntos y a Barney retomando su vida de soltero, confesó a Lily que no podía seguir formando parte del grupo debido a sus sentimientos no resueltos por Ted, lo que la llevó a alejarse aún más. A pesar de la distancia, Robin continuó siendo una figura importante en la vida de sus amigos, aunque su presencia física fuera menos frecuente.
+                    </p>
+                  </div>
+                </div>
+                <div class="col-12 col-md-4">
+                  <img src="img/robin.jpg" class="img-fluid rounded m-2 ms-0" alt="marshall" />
+                </div>
+              </div>
+            </div>
+            <!-- Robin Scherbatsky -->
+            
+            <!-- final de tracy -->
+            <div class="container d-flex justify-content-center mb-5 bg-transparent">
+              <div class="row justify-content-center align-items-center bg-transparent">
+                <img src="img/tragedy.png" class="d-block w-75 mt-5 mb-5" alt="final" />
+                <div class="card card-body bg-custom2 p-3 mt-3 w-100 mx-auto">
+                  <p class="card-text">
+                    Ted Mosby y Tracy McConnell se conocieron en la estación de tren de Farhampton después de la boda de Barney y Robin. Tracy comparte con Ted una pasión por la música y una visión romántica de la vida, lo que sienta las bases para una relación sólida. Su relación se profundiza rápidamente, manifestándose en momentos cotidianos y en hitos significativos, como el nacimiento de sus hijos, Penny y Luke. Sin embargo, en un giro inesperado, se revela que Tracy fallece en 2024 debido a una enfermedad no especificada, lo que representa una pérdida devastadora para Ted y sus hijos. A través de flashbacks, la serie ilustra el amor profundo y la felicidad que compartieron, añadiendo una capa de complejidad a la narrativa al mostrar cómo Ted enfrenta la pérdida y encuentra la fuerza para seguir adelante, honrando la memoria de Tracy mientras continúa su viaje personal. La serie concluye con Ted compartiendo con sus hijos la historia de su vida con Tracy, lo que lleva a una reflexión sobre el amor, la pérdida y la posibilidad de nuevas oportunidades, resaltando la resiliencia humana y la capacidad de encontrar esperanza y amor incluso después de una pérdida significativa.
+                  </p>
+                </div>
+                <img src="img/tragedia.jpg" class="d-block w-75 mt-5 mb-5" alt="final" />
+              </div>
+            </div>
+            <!-- final de tracy -->
 
-      <p>
-        El episodio explora la evolución de los personajes a lo largo de los
-        años:
-      </p>
+            <!-- final de ted y robin -->
+            <div class="container d-flex justify-content-center mb-5 bg-transparent">
+              <div class="row justify-content-center align-items-center bg-transparent">
+                <img src="img/tedrob.png" class="d-block w-75 mt-5 mb-5" alt="final" />
+                <img src="img/ted.jpg" class="d-block w-75 mt-5 mb-5" alt="final" />
+                <div class="card card-body bg-custom2 p-3 mt-3 w-100 mx-auto">
+                  <p class="card-text">
+                    Tras la trágica muerte de Tracy, el paso del tiempo lo llevó a reflexionar sobre el amor en todas sus formas, incluyendo aquel que, aunque no siempre pudo florecer en su momento, nunca desapareció del todo. Cuando Ted narra su historia a sus hijos, esperando que comprendan cómo conoció a su madre, ellos perciben algo que él mismo no ha querido admitir: la historia que les ha contado no es solo sobre Tracy, sino también sobre Robin. Los hijos de Ted, con una madurez que refleja su profundo entendimiento de su padre, lo confrontan y le hacen ver que su relato está impregnado de una constante: Robin siempre fue importante para él. Le hacen notar que, a pesar del amor innegable que tuvo por Tracy, Robin sigue ocupando un lugar especial en su corazón y que, ahora que ambos están en un momento diferente de sus vidas, tal vez sea el momento de intentarlo de nuevo. Conmovido por las palabras de sus hijos y dándose cuenta de que sus sentimientos por Robin nunca desaparecieron del todo, Ted decide dar un paso hacia el pasado para explorar una nueva posibilidad en su futuro. En la escena final, llega al departamento de Robin, sosteniendo en alto el icónico cuerno azul francés, el mismo símbolo de su amor juvenil, pero ahora con un significado más profundo. Este gesto, más que un simple recordatorio de su historia juntos, representa un amor que ha resistido el paso del tiempo, que ha sobrevivido a las pérdidas y que, a pesar de todo, sigue teniendo una oportunidad de renacer. Así, la historia de Ted y Robin se cierra en un ciclo perfecto: no como un regreso a lo que fueron, sino como la posibilidad de descubrir lo que aún pueden ser.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- final de ted y robin -->
 
-      <ul>
-        <li>
-          <strong>Marshall Eriksen y Lily Aldrin</strong>: La pareja tiene más
-          hijos y Marshall logra su sueño de convertirse en juez. Marshall y
-          Lily permanecen juntos y felices, enfrentando los desafíos de la vida
-          con su amor inquebrantable.
-        </li>
-        <li>
-          <strong>Barney Stinson</strong>: Después de su divorcio, Barney
-          regresa a su vida de soltero y mujeriego. Sin embargo, experimenta un
-          cambio significativo cuando una de sus conquistas queda embarazada y
-          da a luz a su hija, Ellie. El nacimiento de Ellie transforma a Barney,
-          quien se convierte en un padre amoroso y dedicado.
-        </li>
-        <li>
-          <strong>Robin Scherbatsky</strong>: Robin lucha por mantener su
-          amistad con el grupo debido a su carrera y la disolución de su
-          matrimonio con Barney. Aunque se distancia temporalmente, sigue siendo
-          una figura importante en la vida de sus amigos.
-        </li>
-      </ul>
-
-      <h4>La Revelación de la Madre</h4>
-
-      <p>
-        Finalmente, se revela que Tracy McConnell, la madre de los hijos de Ted,
-        falleció en el año 2024 a causa de una enfermedad. Esta revelación es un
-        momento devastador para Ted y sus hijos, y marca un punto crucial en la
-        narrativa de la serie. La historia de cómo Ted conoció a Tracy y su
-        relación se desarrolla a través de flashbacks que muestran su amor
-        profundo y la felicidad que compartieron.
-      </p>
-
-      <h4>El Giro Final: Ted y Robin</h4>
-
-      <p>
-        En el desenlace del episodio, se muestra que Ted sigue teniendo
-        sentimientos por Robin, incluso años después de la muerte de Tracy. Los
-        hijos de Ted, después de escuchar toda la historia, lo animan a buscar a
-        Robin y darle una segunda oportunidad al amor. El episodio finaliza con
-        Ted apareciendo en el departamento de Robin con el famoso cuerno azul
-        francés, simbolizando su amor eterno por ella y cerrando el círculo de
-        su relación.
-      </p>
-
-      <h3>Análisis de la Recepción</h3>
-
-      <h4>Reacciones Mixtas de los Fans</h4>
-
-      <p>
-        El final de "How I Met Your Mother" fue recibido con una mezcla de
-        reacciones por parte de los fans y la crítica. Algunas de las reacciones
-        más comunes incluyen:
-      </p>
-
-      <ul>
-        <li>
-          <strong>Sorpresa y Confusión</strong>: Muchos espectadores se
-          sorprendieron por el giro final que unió a Ted y Robin, después de que
-          la serie dedicara tanto tiempo a establecer la historia de amor entre
-          Ted y Tracy. La revelación de la muerte de Tracy también fue un golpe
-          inesperado para muchos fans.
-        </li>
-        <li>
-          <strong>Decepción</strong>: Algunos fans se sintieron decepcionados
-          porque el final parecía contradecir el desarrollo de los personajes y
-          las relaciones construidas a lo largo de la serie. En particular, la
-          decisión de que Barney y Robin se divorciaran y que Ted volviera a
-          estar con Robin fue vista como un retroceso en la evolución de los
-          personajes.
-        </li>
-        <li>
-          <strong>Apreciación y Nostalgia</strong>: Otros fans apreciaron el
-          final por su enfoque en el destino y el amor eterno. La idea de que
-          Ted y Robin, a pesar de todo, estaban destinados a estar juntos resonó
-          con algunos espectadores, quienes valoraron el cierre emocional de la
-          serie.
-        </li>
-      </ul>
-
-      <h4>Crítica y Análisis</h4>
-
-      <p>
-        La crítica profesional también tuvo opiniones divididas sobre el final.
-        Algunos críticos elogiaron la valentía de los creadores de la serie,
-        Carter Bays y Craig Thomas, por tomar riesgos narrativos y entregar un
-        final inesperado. Sin embargo, otros señalaron que el final parecía
-        apresurado y no coherente con la evolución de los personajes.
-      </p>
-
-      <h3>Reflexiones Finales</h3>
-
-      <p>
-        El final de "How I Met Your Mother" sigue siendo un tema de debate entre
-        los fans, incluso años después de su emisión. La serie, conocida por su
-        estilo narrativo único y sus personajes entrañables, dejó una marca
-        duradera en la televisión y en la cultura pop. A pesar de las reacciones
-        mixtas, el final de la serie es una reflexión sobre la complejidad del
-        amor, la vida y las relaciones humanas.
-      </p>
+            <!-- Último bloque -->
+            <div class="card mb-3 border border-3 border-dark bg-transparent">
+              <div class="row g-0">
+                <div class="card-body">
+                  <p class="card-text fs-5">
+                    Sin embargo, este final no fue del agrado de todos los fans, quienes expresaron su descontento con la resolución de la serie. Se criticó que la muerte de Tracy y la reconciliación de Ted y Robin eclipsó la historia de amor entre Ted y Tracy por la posibilidad de un reencuentro con Robin, generando controversia y división entre los seguidores de la serie.<br>
+                    A causa de estas fuertes opiniones la producción a crear un final alternativo. Si quieres saber qué sucede en este final...
+                  </p>
+                  <h5 class="card-title text-center">
+                    <a href="finalt.html" class="btn btn-sm bg-custom fs-6" role="button" aria-pressed="true">
+                      Sigue por aquí
+                    </a>
+                  </h5>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- resumen -->
+      </div>
     </main>
     <footer class="container-fluid bg-custom">
       <section class="container text-center pt-2 pb-2">
@@ -237,10 +264,14 @@
             </a>
           </div>
           <div class="col-4 col-sm-2">
-            <a href="../desarrolladora.html" class="btn btn-outline-dark btn-sm lg-text-nowrap " role="button" aria-pressed="true">SOBRE EL SITIO</a>
+            <a href="../desarrolladora.html" class="btn btn-outline-dark btn-sm lg-text-nowrap" role="button" aria-pressed="true">SOBRE EL SITIO</a>
           </div>
         </div>
       </section>
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>  </body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" 
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" 
+      crossorigin="anonymous">
+    </script>  
+  </body>
 </html>
