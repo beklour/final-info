@@ -142,560 +142,359 @@
         </div>
       </nav>
     </header>
-    <main class="container d-flex justify-content-center mt-7 mb-5">
-      <!-- Estilos Responsivos -->
-      <style>
-        @media (max-width: 576px) {
-          /* Botones más pequeños */
-          .btn.btn-warning {
-            font-size: 1rem !important;
-            padding: 0.25rem 0.5rem !important;
-          }
-          /* Imagen del título más pequeña */
-          .card-title img {
-            max-height: 200px !important;
-            width: 75% !important;
-          }
-          /* Reducir tamaño de la fuente del contenido */
-          .card-body {
-            font-size: 0.8rem !important;
-          }
-        }
-      </style>
+    <main class="container d-flex justify-content-center mt-7 mb-5">      
 
       <div class="container">
-        <!-- Row para Ted -->
-        <div class="row">
-          <!-- Columna izquierda: Card (8 columnas) -->
-          <div class="col-md-8">
-            <div class="card mb-3 mt-3">
-              <div class="card-body">
-                <h5 class="card-title d-flex justify-content-center">
-                  <img
-                    class="w-50 img-fluid"
-                    src="img/tedd.png"
-                    style="max-height: 350px"
-                    alt="tedd"
-                  />
-                </h5>
-                <!-- Botones en una sola línea -->
-                <div class="d-flex justify-content-around mb-3">
-                  <button
-                    class="btn btn-warning fs-3"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#ted-collapse-marshall"
-                    aria-expanded="false"
-                    aria-controls="ted-collapse-marshall"
-                  >
-                    Marshall
-                  </button>
-                  <button
-                    class="btn btn-warning fs-3"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#ted-collapse-lily"
-                    aria-expanded="false"
-                    aria-controls="ted-collapse-lily"
-                  >
-                    Lily
-                  </button>
-                  <button
-                    class="btn btn-warning fs-3"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#ted-collapse-barney"
-                    aria-expanded="false"
-                    aria-controls="ted-collapse-barney"
-                  >
-                    Barney
-                  </button>
-                  <button
-                    class="btn btn-warning fs-3"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#ted-collapse-robin"
-                    aria-expanded="false"
-                    aria-controls="ted-collapse-robin"
-                  >
-                    Robin
-                  </button>
-                </div>
-                <!-- Contenido colapsable -->
-                <div style="min-height: 120px">
-                  <div class="collapse mb-2" id="ted-collapse-marshall">
-                    <div
-                      class="card card-body w-100 border border-3 border-dark"
-                    >
-                      Ted y Marshall tienen una amistad muy fuerte que comenzó
-                      cuando se conocieron en la Universidad Wesleyan. Son
-                      compañeros de cuarto y se apoyan mutuamente en todas las
-                      etapas de sus vidas.
-                    </div>
-                  </div>
-                  <div class="collapse mb-2" id="ted-collapse-lily">
-                    <div
-                      class="card card-body w-100 border border-3 border-dark"
-                    >
-                      Lily es la mejor amiga de Ted y la esposa de Marshall. Su
-                      relación es cercana y fraternal; siempre se preocupa por
-                      el bienestar de Ted.
-                    </div>
-                  </div>
-                  <div class="collapse mb-2" id="ted-collapse-barney">
-                    <div
-                      class="card card-body w-100 border border-3 border-dark"
-                    >
-                      Barney y Ted se conocen en el bar MacLaren's y rápidamente
-                      se convierten en grandes amigos, basando su relación en la
-                      lealtad y el humor.
-                    </div>
-                  </div>
-                  <div class="collapse" id="ted-collapse-robin">
-                    <div
-                      class="card card-body w-100 border border-3 border-dark"
-                    >
-                      La relación de Ted con Robin es una de las más importantes
-                      de la serie, llena de altibajos pero con una conexión
-                      profunda.
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
+   <!-- Row para Ted -->
+<div class="row">
+  <!-- Columna izquierda: Card (8 columnas) -->
+  <div class="col-md-8">
+    <div class="card mb-3 mt-3">
+      <div class="card-body justify-content-center">
+        <h5 class="card-title d-flex justify-content-center">
+          <img class="w-50 img-fluid" src="img/ted/tedd.png" style="max-height: 350px" alt="tedd" />
+        </h5>
+        <!-- Botones en una sola línea, espaciados around -->
+        <div class="row gy-3 justify-content-around mb-3">
+          <div class="col-6 col-md-2">
+            <button class="btn btn-warning p-0 w-100" type="button" data-bs-toggle="collapse" data-bs-target="#ted-collapse-marshall" aria-expanded="false" aria-controls="ted-collapse-marshall">
+              <img src="img/ted/tedmar.jpg" class="img-fluid rounded w-100" alt="ted" />
+              Y Marshall
+            </button>
           </div>
-          <!-- Columna derecha: Imagen de Ted (4 columnas) -->
-          <div
-            class="col-md-4 d-flex align-items-center justify-content-center"
-          >
-            <img src="img/ted.jpg" class="img-fluid rounded m-2" alt="ted" />
+          <div class="col-6 col-md-2">
+            <button class="btn btn-warning p-0 w-100" type="button" data-bs-toggle="collapse" data-bs-target="#ted-collapse-lily" aria-expanded="false" aria-controls="ted-collapse-lily">
+              <img src="img/ted/tedly.jpg" class="img-fluid rounded w-100" alt="ted" />
+              Y Lily
+            </button>
+          </div>
+          <div class="col-6 col-md-2">
+            <button class="btn btn-warning p-0 w-100" type="button" data-bs-toggle="collapse" data-bs-target="#ted-collapse-barney" aria-expanded="false" aria-controls="ted-collapse-barney">
+              <img src="img/ted/barted.jpg" class="img-fluid rounded w-100" alt="ted" />
+              Y Barney
+            </button>
+          </div>
+          <div class="col-6 col-md-2">
+            <button class="btn btn-warning p-0 w-100" type="button" data-bs-toggle="collapse" data-bs-target="#ted-collapse-robin" aria-expanded="false" aria-controls="ted-collapse-robin">
+              <img src="img/ted/tedrob.jpg" class="img-fluid rounded w-100" alt="ted" />
+              Y Robin
+            </button>
           </div>
         </div>
-        <!-- Fin Row para Ted -->
+        <!-- Contenido colapsable -->
+        <div style="min-height: 120px">
+          <div class="collapse mb-2" id="ted-collapse-marshall">
+            <div class="card card-body w-100 border border-3 border-dark">
+              Ted y Marshall tienen una amistad muy fuerte que comenzó cuando se conocieron en la Universidad Wesleyan. Son compañeros de cuarto y se apoyan mutuamente en todas las etapas de sus vidas.
+            </div>
+          </div>
+          <div class="collapse mb-2" id="ted-collapse-lily">
+            <div class="card card-body w-100 border border-3 border-dark">
+              Lily es la mejor amiga de Ted y la esposa de Marshall. Su relación es cercana y fraternal; siempre se preocupa por el bienestar de Ted.
+            </div>
+          </div>
+          <div class="collapse mb-2" id="ted-collapse-barney">
+            <div class="card card-body w-100 border border-3 border-dark">
+              Barney y Ted se conocen en el bar MacLaren's y rápidamente se convierten en grandes amigos, basando su relación en la lealtad y el humor.
+            </div>
+          </div>
+          <div class="collapse" id="ted-collapse-robin">
+            <div class="card card-body w-100 border border-3 border-dark">
+              La relación de Ted con Robin es una de las más importantes de la serie, llena de altibajos pero con una conexión profunda.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Columna derecha: Imagen de Ted (4 columnas) -->
+  <div class="col-md-4 d-flex align-items-center justify-content-center">
+    <img src="img/ted/ted.jpg" class="img-fluid rounded m-2" alt="ted" />
+  </div>
+</div>
+<!-- Fin Row para Ted -->
+
 
         <!-- Row para Marshall -->
-        <div class="row">
-          <!-- Columna izquierda: Card (8 columnas) -->
-          <div class="col-md-8">
-            <div class="card mb-3 mt-3">
-              <div class="card-body">
-                <h5 class="card-title d-flex justify-content-center">
-                  <img
-                    class="w-50 img-fluid"
-                    src="img/marshalll.png"
-                    style="max-height: 350px"
-                    alt="marshall"
-                  />
-                </h5>
-                <!-- Botones en una sola línea -->
-                <div class="d-flex justify-content-around mb-3">
-                  <button
-                    class="btn btn-warning fs-3"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#marshall-collapse-ted"
-                    aria-expanded="false"
-                    aria-controls="marshall-collapse-ted"
-                  >
-                    Ted
-                  </button>
-                  <button
-                    class="btn btn-warning fs-3"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#marshall-collapse-lily"
-                    aria-expanded="false"
-                    aria-controls="marshall-collapse-lily"
-                  >
-                    Lily
-                  </button>
-                  <button
-                    class="btn btn-warning fs-3"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#marshall-collapse-barney"
-                    aria-expanded="false"
-                    aria-controls="marshall-collapse-barney"
-                  >
-                    Barney
-                  </button>
-                  <button
-                    class="btn btn-warning fs-3"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#marshall-collapse-robin"
-                    aria-expanded="false"
-                    aria-controls="marshall-collapse-robin"
-                  >
-                    Robin
-                  </button>
-                </div>
-                <!-- Contenido colapsable -->
-                <div style="min-height: 120px">
-                  <div class="collapse mb-2" id="marshall-collapse-ted">
-                    <div
-                      class="card card-body w-100 border border-3 border-dark"
-                    >
-                      La amistad entre Marshall y Ted comenzó en la Universidad
-                      Wesleyan, donde compartían habitación y se apoyaban
-                      mutuamente.
-                    </div>
-                  </div>
-                  <div class="collapse mb-2" id="marshall-collapse-lily">
-                    <div
-                      class="card card-body w-100 border border-3 border-dark"
-                    >
-                      Marshall y Lily se conocieron en la universidad y
-                      rápidamente se enamoraron. Su relación es uno de los
-                      pilares de la serie.
-                    </div>
-                  </div>
-                  <div class="collapse mb-2" id="marshall-collapse-barney">
-                    <div
-                      class="card card-body w-100 border border-3 border-dark"
-                    >
-                      Aunque muy diferentes, Marshall y Barney comparten una
-                      amistad basada en la camaradería y el humor.
-                    </div>
-                  </div>
-                  <div class="collapse" id="marshall-collapse-robin">
-                    <div
-                      class="card card-body w-100 border border-3 border-dark"
-                    >
-                      Marshall y Robin tienen una relación de amistad y respeto,
-                      siempre dispuestos a apoyarse mutuamente.
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
+<div class="row">
+  <!-- Columna izquierda: Card (8 columnas) -->
+  <div class="col-md-8">
+    <div class="card mb-3 mt-3">
+      <div class="card-body justify-content-center">
+        <h5 class="card-title d-flex justify-content-center">
+          <img class="w-50 img-fluid" src="img/marshall/marshalll.png" style="max-height: 350px" alt="marshall" />
+        </h5>
+        <!-- Botones en una sola línea, espaciados around -->
+        <div class="row gy-3 justify-content-around mb-3">
+          <div class="col-6 col-md-2">
+            <button class="btn btn-warning p-0 w-100" type="button" data-bs-toggle="collapse" data-bs-target="#marshall-collapse-ted" aria-expanded="false" aria-controls="marshall-collapse-ted">
+              <img src="img/marshall/mated.jpg" class="img-fluid rounded w-100" alt="marshall" />
+              Y Ted
+            </button>
           </div>
-          <!-- Columna derecha: Imagen de Marshall (4 columnas) -->
-          <div
-            class="col-md-4 d-flex align-items-center justify-content-center"
-          >
-            <img
-              src="img/marshall.jpg"
-              class="img-fluid rounded m-2"
-              alt="marshall"
-            />
+          <div class="col-6 col-md-2">
+            <button class="btn btn-warning p-0 w-100" type="button" data-bs-toggle="collapse" data-bs-target="#marshall-collapse-lily" aria-expanded="false" aria-controls="marshall-collapse-lily">
+              <img src="img/marshall/marli.jpg" class="img-fluid rounded w-100" alt="marshall" />
+              Y Lily
+            </button>
+          </div>
+          <div class="col-6 col-md-2">
+            <button class="btn btn-warning p-0 w-100" type="button" data-bs-toggle="collapse" data-bs-target="#marshall-collapse-barney" aria-expanded="false" aria-controls="marshall-collapse-barney">
+              <img src="img/marshall/marbar.jpg" class="img-fluid rounded w-100" alt="marshall" />
+              Y Barney
+            </button>
+          </div>
+          <div class="col-6 col-md-2">
+            <button class="btn btn-warning p-0 w-100" type="button" data-bs-toggle="collapse" data-bs-target="#marshall-collapse-robin" aria-expanded="false" aria-controls="marshall-collapse-robin">
+              <img src="img/marshall/marrob.jpg" class="img-fluid rounded w-100" alt="marshall" />
+              Y Robin
+            </button>
           </div>
         </div>
-        <!-- Fin Row para Marshall -->
+        <!-- Contenido colapsable -->
+        <div style="min-height: 120px">
+          <div class="collapse mb-2" id="marshall-collapse-ted">
+            <div class="card card-body w-100 border border-3 border-dark">
+              La amistad entre Marshall y Ted comenzó en la Universidad Wesleyan, donde compartían habitación y se apoyaban mutuamente.
+            </div>
+          </div>
+          <div class="collapse mb-2" id="marshall-collapse-lily">
+            <div class="card card-body w-100 border border-3 border-dark">
+              Marshall y Lily se conocieron en la universidad y rápidamente se enamoraron. Su relación es uno de los pilares de la serie.
+            </div>
+          </div>
+          <div class="collapse mb-2" id="marshall-collapse-barney">
+            <div class="card card-body w-100 border border-3 border-dark">
+              Aunque muy diferentes, Marshall y Barney comparten una amistad basada en la camaradería y el humor.
+            </div>
+          </div>
+          <div class="collapse" id="marshall-collapse-robin">
+            <div class="card card-body w-100 border border-3 border-dark">
+              Marshall y Robin tienen una relación de amistad y respeto, siempre dispuestos a apoyarse mutuamente.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Columna derecha: Imagen de Marshall (4 columnas) -->
+  <div class="col-md-4 d-flex align-items-center justify-content-center">
+    <img src="img/marshall/marshall.jpg" class="img-fluid rounded m-2" alt="marshall"/>
+  </div>
+</div>
+<!-- Fin Row para Marshall -->
 
-        <!-- Row para Lily -->
-        <div class="row">
-          <!-- Columna izquierda: Card (8 columnas) -->
-          <div class="col-md-8">
-            <div class="card mb-3 mt-3">
-              <div class="card-body">
-                <h5 class="card-title d-flex justify-content-center">
-                  <img
-                    class="w-50 img-fluid"
-                    src="img/lilyyy.png"
-                    style="max-height: 350px"
-                    alt="lily"
-                  />
-                </h5>
-                <!-- Botones en una sola línea -->
-                <div class="d-flex justify-content-around mb-3">
-                  <button
-                    class="btn btn-warning fs-3"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#lily-collapse-ted"
-                    aria-expanded="false"
-                    aria-controls="lily-collapse-ted"
-                  >
-                    Ted
-                  </button>
-                  <button
-                    class="btn btn-warning fs-3"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#lily-collapse-marshall"
-                    aria-expanded="false"
-                    aria-controls="lily-collapse-marshall"
-                  >
-                    Marshall
-                  </button>
-                  <button
-                    class="btn btn-warning fs-3"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#lily-collapse-barney"
-                    aria-expanded="false"
-                    aria-controls="lily-collapse-barney"
-                  >
-                    Barney
-                  </button>
-                  <button
-                    class="btn btn-warning fs-3"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#lily-collapse-robin"
-                    aria-expanded="false"
-                    aria-controls="lily-collapse-robin"
-                  >
-                    Robin
-                  </button>
-                </div>
-                <!-- Contenido colapsable -->
-                <div style="min-height: 120px">
-                  <div class="collapse mb-2" id="lily-collapse-ted">
-                    <div
-                      class="card card-body w-100 border border-3 border-dark"
-                    >
-                      Lily y Ted comparten una amistad profunda y fraternal
-                      desde sus días en la Universidad Wesleyan.
-                    </div>
-                  </div>
-                  <div class="collapse mb-2" id="lily-collapse-marshall">
-                    <div
-                      class="card card-body w-100 border border-3 border-dark"
-                    >
-                      Marshall y Lily se enamoraron en la universidad y forman
-                      una pareja sólida y entrañable.
-                    </div>
-                  </div>
-                  <div class="collapse mb-2" id="lily-collapse-barney">
-                    <div
-                      class="card card-body w-100 border border-3 border-dark"
-                    >
-                      Lily y Barney tienen una amistad basada en el respeto y el
-                      apoyo mutuo.
-                    </div>
-                  </div>
-                  <div class="collapse" id="lily-collapse-robin">
-                    <div
-                      class="card card-body w-100 border border-3 border-dark"
-                    >
-                      Lily y Robin son mejores amigas y confían plenamente la
-                      una en la otra.
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
+
+       <!-- Row para Lily -->
+<div class="row">
+  <!-- Columna izquierda: Card (8 columnas) -->
+  <div class="col-md-8">
+    <div class="card mb-3 mt-3">
+      <div class="card-body justify-content-center">
+        <h5 class="card-title d-flex justify-content-center">
+          <img class="w-50 img-fluid" src="img/lily/lilyyy.png" style="max-height: 350px" alt="lily" />
+        </h5>
+        <!-- Botones en una sola línea, espaciados around -->
+        <div class="row gy-3 justify-content-around mb-3">
+          <div class="col-6 col-md-2">
+            <button class="btn btn-warning p-0 w-100" type="button" data-bs-toggle="collapse" data-bs-target="#lily-collapse-ted" aria-expanded="false" aria-controls="lily-collapse-ted">
+              <img src="img/lily/tedlily.jpg" class="img-fluid rounded w-100" alt="barney" />
+              Y Ted
+            </button>
           </div>
-          <!-- Columna derecha: Imagen de Lily (4 columnas) -->
-          <div
-            class="col-md-4 d-flex align-items-center justify-content-center"
-          >
-            <img src="img/lily.jpg" class="img-fluid rounded m-2" alt="lily" />
+          <div class="col-6 col-md-2">
+            <button class="btn btn-warning p-0 w-100" type="button" data-bs-toggle="collapse" data-bs-target="#lily-collapse-marshall" aria-expanded="false" aria-controls="lily-collapse-marshall">
+              <img src="img/lily/lilymarsh.jpg" class="img-fluid rounded w-100" alt="barney" />
+              Y Marshall
+            </button>
+          </div>
+          <div class="col-6 col-md-2">
+            <button class="btn btn-warning p-0 w-100" type="button" data-bs-toggle="collapse" data-bs-target="#lily-collapse-barney" aria-expanded="false" aria-controls="lily-collapse-barney">
+              <img src="img/lily/lilibar.jpg" class="img-fluid rounded w-100" alt="barney" />
+              Y Barney
+            </button>
+          </div>
+          <div class="col-6 col-md-2">
+            <button class="btn btn-warning p-0 w-100" type="button" data-bs-toggle="collapse" data-bs-target="#lily-collapse-robin" aria-expanded="false" aria-controls="lily-collapse-robin">
+              <img src="img/lily/lilirob.jpg" class="img-fluid rounded w-100" alt="barney" />
+              Y Robin
+            </button>
           </div>
         </div>
-        <!-- Fin Row para Lily -->
+        
+        <!-- Contenido colapsable -->
+        <div style="min-height: 120px">
+          <div class="collapse mb-2" id="lily-collapse-ted">
+            <div class="card card-body w-100 border border-3 border-dark">
+              Lily y Ted comparten una amistad profunda y fraternal desde sus días en la Universidad Wesleyan.
+            </div>
+          </div>
+          <div class="collapse mb-2" id="lily-collapse-marshall">
+            <div class="card card-body w-100 border border-3 border-dark">
+              Marshall y Lily se enamoraron en la universidad y forman una pareja sólida y entrañable.
+            </div>
+          </div>
+          <div class="collapse mb-2" id="lily-collapse-barney">
+            <div class="card card-body w-100 border border-3 border-dark">
+              Lily y Barney tienen una amistad basada en el respeto y el apoyo mutuo.
+            </div>
+          </div>
+          <div class="collapse" id="lily-collapse-robin">
+            <div class="card card-body w-100 border border-3 border-dark">
+              Lily y Robin son mejores amigas y confían plenamente la una en la otra.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Columna derecha: Imagen de Lily (4 columnas) -->
+  <div class="col-md-4 d-flex align-items-center justify-content-center">
+    <img src="img/lily/lily.jpg" class="img-fluid rounded m-2" alt="lily" />
+  </div>
+</div>
+<!-- Fin Row para Lily -->
+
 
         <!-- Row para Barney -->
-        <div class="row">
-          <!-- Columna izquierda: Card (8 columnas) -->
-          <div class="col-md-8">
-            <div class="card mb-3 mt-3">
-              <div class="card-body">
-                <h5 class="card-title d-flex justify-content-center">
-                  <img
-                    class="w-50 img-fluid"
-                    src="img/barneyy.png"
-                    style="max-height: 350px"
-                    alt="barney"
-                  />
-                </h5>
-                <!-- Botones en una sola línea -->
-                <div class="d-flex justify-content-around mb-3">
-                  <button
-                    class="btn btn-warning fs-3"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#barney-collapse-ted"
-                    aria-expanded="false"
-                    aria-controls="barney-collapse-ted"
-                  >
-                    Ted
-                  </button>
-                  <button
-                    class="btn btn-warning fs-3"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#barney-collapse-marshall"
-                    aria-expanded="false"
-                    aria-controls="barney-collapse-marshall"
-                  >
-                    Marshall
-                  </button>
-                  <button
-                    class="btn btn-warning fs-3"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#barney-collapse-lily"
-                    aria-expanded="false"
-                    aria-controls="barney-collapse-lily"
-                  >
-                    Lily
-                  </button>
-                  <button
-                    class="btn btn-warning fs-3"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#barney-collapse-robin"
-                    aria-expanded="false"
-                    aria-controls="barney-collapse-robin"
-                  >
-                    Robin
-                  </button>
-                </div>
-                <!-- Contenido colapsable -->
-                <div style="min-height: 120px">
-                  <div class="collapse mb-2" id="barney-collapse-ted">
-                    <div
-                      class="card card-body w-100 border border-3 border-dark"
-                    >
-                      Barney y Ted se conocen en el bar MacLaren's y establecen
-                      una amistad basada en la diversión y la lealtad.
-                    </div>
-                  </div>
-                  <div class="collapse mb-2" id="barney-collapse-marshall">
-                    <div
-                      class="card card-body w-100 border border-3 border-dark"
-                    >
-                      Marshall y Barney comparten momentos de camaradería, pese
-                      a sus diferencias de personalidad.
-                    </div>
-                  </div>
-                  <div class="collapse mb-2" id="barney-collapse-lily">
-                    <div
-                      class="card card-body w-100 border border-3 border-dark"
-                    >
-                      Lily y Barney desarrollan una amistad en la que se
-                      respetan y se apoyan mutuamente.
-                    </div>
-                  </div>
-                  <div class="collapse" id="barney-collapse-robin">
-                    <div
-                      class="card card-body w-100 border border-3 border-dark"
-                    >
-                      La relación de Barney y Robin pasa de la amistad a un
-                      romance con altibajos.
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
+<div class="row">
+  <!-- Columna izquierda: Card (8 columnas) -->
+  <div class="col-md-8">
+    <div class="card mb-3 mt-3">
+      <div class="card-body justify-content-center">
+        <h5 class="card-title d-flex justify-content-center">
+          <img class="w-50 img-fluid" src="img/barney/barneyy.png" style="max-height: 350px" alt="barney" />
+        </h5>
+        <!-- Botones en una sola línea, espaciados around -->
+        <div class="row gy-3 justify-content-around mb-3">
+          <div class="col-6 col-md-2">
+            <button class="btn btn-warning p-0 w-100" type="button" data-bs-toggle="collapse" data-bs-target="#barney-collapse-ted" aria-expanded="false" aria-controls="barney-collapse-ted">
+              <img src="img/barney/tedba.jpg" class="img-fluid rounded w-100" alt="barney" />
+              Y Ted
+            </button>
           </div>
-          <!-- Columna derecha: Imagen de Barney (4 columnas) -->
-          <div
-            class="col-md-4 d-flex align-items-center justify-content-center"
-          >
-            <img
-              src="img/barney.jpg"
-              class="img-fluid rounded m-2"
-              alt="barney"
-            />
+          <div class="col-6 col-md-2">
+            <button class="btn btn-warning p-0 w-100" type="button" data-bs-toggle="collapse" data-bs-target="#barney-collapse-marshall" aria-expanded="false" aria-controls="barney-collapse-marshall">
+              <img src="img/barney/bamash.jpg" class="img-fluid rounded w-100" alt="barney" />
+              Y Marshall
+            </button>
+          </div>
+          <div class="col-6 col-md-2">
+            <button class="btn btn-warning p-0 w-100" type="button" data-bs-toggle="collapse" data-bs-target="#barney-collapse-lily" aria-expanded="false" aria-controls="barney-collapse-lily">
+              <img src="img/barney/barnelily.jpg" class="img-fluid rounded w-100" alt="barney" />
+              Y Lily
+            </button>
+          </div>
+          <div class="col-6 col-md-2">
+            <button class="btn btn-warning p-0 w-100" type="button" data-bs-toggle="collapse" data-bs-target="#barney-collapse-robin" aria-expanded="false" aria-controls="barney-collapse-robin">
+              <img src="img/barney/barrob.jpg" class="img-fluid rounded w-100" alt="barney" />
+              Y Robin
+            </button>
           </div>
         </div>
-        <!-- Fin Row para Barney -->
-
-        <!-- Row para Robin -->
-        <div class="row">
-          <!-- Columna izquierda: Card (8 columnas) -->
-          <div class="col-md-8">
-            <div class="card mb-3 mt-3">
-              <div class="card-body">
-                <h5 class="card-title d-flex justify-content-center">
-                  <img
-                    class="w-50 img-fluid"
-                    src="img/robinn.png"
-                    style="max-height: 350px"
-                    alt="robin"
-                  />
-                </h5>
-                <!-- Botones en una sola línea -->
-                <div class="d-flex justify-content-around mb-3">
-                  <button
-                    class="btn btn-warning fs-3"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#robin-collapse-ted"
-                    aria-expanded="false"
-                    aria-controls="robin-collapse-ted"
-                  >
-                    Ted
-                  </button>
-                  <button
-                    class="btn btn-warning fs-3"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#robin-collapse-marshall"
-                    aria-expanded="false"
-                    aria-controls="robin-collapse-marshall"
-                  >
-                    Marshall
-                  </button>
-                  <button
-                    class="btn btn-warning fs-3"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#robin-collapse-lily"
-                    aria-expanded="false"
-                    aria-controls="robin-collapse-lily"
-                  >
-                    Lily
-                  </button>
-                  <button
-                    class="btn btn-warning fs-3"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#robin-collapse-barney"
-                    aria-expanded="false"
-                    aria-controls="robin-collapse-barney"
-                  >
-                    Barney
-                  </button>
-                </div>
-                <!-- Contenido colapsable -->
-                <div style="min-height: 120px">
-                  <div class="collapse mb-2" id="robin-collapse-ted">
-                    <div
-                      class="card card-body w-100 border border-3 border-dark"
-                    >
-                      La relación de Robin y Ted es fundamental en la serie,
-                      marcada por un amor intermitente y una amistad sincera.
-                    </div>
-                  </div>
-                  <div class="collapse mb-2" id="robin-collapse-marshall">
-                    <div
-                      class="card card-body w-100 border border-3 border-dark"
-                    >
-                      Robin y Marshall comparten una amistad basada en el
-                      respeto y el apoyo mutuo.
-                    </div>
-                  </div>
-                  <div class="collapse mb-2" id="robin-collapse-lily">
-                    <div
-                      class="card card-body w-100 border border-3 border-dark"
-                    >
-                      Robin y Lily son inseparables amigas, con una relación
-                      llena de confianza y complicidad.
-                    </div>
-                  </div>
-                  <div class="collapse" id="robin-collapse-barney">
-                    <div
-                      class="card card-body w-100 border border-3 border-dark"
-                    >
-                      La relación de Robin y Barney evoluciona de la amistad a
-                      un romance complicado, con una conexión profunda.
-                    </div>
-                  </div>
-                </div>
-              </div>
+        <!-- Contenido colapsable -->
+        <div style="min-height: 120px">
+          <div class="collapse mb-2" id="barney-collapse-ted">
+            <div class="card card-body w-100 border border-3 border-dark">
+              Barney y Ted se conocen en el bar MacLaren's y establecen una amistad basada en la diversión y la lealtad.
             </div>
           </div>
+          <div class="collapse mb-2" id="barney-collapse-marshall">
+            <div class="card card-body w-100 border border-3 border-dark">
+              Marshall y Barney comparten momentos de camaradería, pese a sus diferencias de personalidad.
+            </div>
+          </div>
+          <div class="collapse mb-2" id="barney-collapse-lily">
+            <div class="card card-body w-100 border border-3 border-dark">
+              Lily y Barney desarrollan una amistad en la que se respetan y se apoyan mutuamente.
+            </div>
+          </div>
+          <div class="collapse" id="barney-collapse-robin">
+            <div class="card card-body w-100 border border-3 border-dark">
+              La relación de Barney y Robin pasa de la amistad a un romance con altibajos.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Columna derecha: Imagen de Barney (4 columnas) -->
+  <div class="col-md-4 d-flex align-items-center justify-content-center">
+    <img src="img/barney/barney.jpg" class="img-fluid rounded m-2" alt="barney" />
+  </div>
+</div>
+<!-- Fin Row para Barney -->
+
+
+       <!-- Row para Robin -->
+<div class="row">
+  <!-- Columna izquierda: Card (8 columnas) -->
+  <div class="col-md-8">
+    <div class="card mb-3 mt-3 ">
+      <div class="card-body justify-content-center">
+        <h5 class="card-title d-flex justify-content-center">
+          <img class="w-50 img-fluid" src="img/robin/robinn.png" style="max-height: 350px" alt="robin" />
+        </h5>
+        <!-- Botones en una sola línea, espaciados around -->
+        <div class="row gy-3 justify-content-around mb-3">
+          <div class="col-6 col-md-2">
+            <button class="btn btn-warning p-0 w-100" type="button" data-bs-toggle="collapse" data-bs-target="#robin-collapse-ted" aria-expanded="false" aria-controls="robin-collapse-ted">
+              <img src="img/robin/tedrob.jpg" class="img-fluid rounded w-100" alt="robin" />
+              y Ted
+            </button>
+          </div>
+          <div class="col-6 col-md-2">
+            <button class="btn btn-warning p-0 w-100" type="button" data-bs-toggle="collapse" data-bs-target="#robin-collapse-marshall" aria-expanded="false" aria-controls="robin-collapse-marshall">
+              <img src="img/robin/marobin.png" class="img-fluid rounded w-100" alt="robin" />
+              Y Marshall
+            </button>
+          </div>
+          <div class="col-6 col-md-2">
+            <button class="btn btn-warning p-0 w-100" type="button" data-bs-toggle="collapse" data-bs-target="#robin-collapse-lily" aria-expanded="false" aria-controls="robin-collapse-lily">
+              <img src="img/robin/lilyrob.jpg" class="img-fluid rounded w-100" alt="robin" />
+              Y Lily
+            </button>
+          </div>
+          <div class="col-6 col-md-2">
+            <button class="btn btn-warning p-0 w-100" type="button" data-bs-toggle="collapse" data-bs-target="#robin-collapse-barney" aria-expanded="false" aria-controls="robin-collapse-barney">
+              <img src="img/robin/borney.jpg" class="img-fluid rounded w-100" alt="robin" />
+              Y Barney
+            </button>
+          </div>
+        </div>
+        
+        <!-- Contenido colapsable -->
+        <div style="min-height: 120px">
+          <div class="collapse mb-2" id="robin-collapse-ted">
+            <div class="card card-body w-100 border border-3 border-dark">
+              La relación de Robin y Ted es fundamental en la serie, marcada por un amor intermitente y una amistad sincera.
+            </div>
+          </div>
+          <div class="collapse mb-2" id="robin-collapse-marshall">
+            <div class="card card-body w-100 border border-3 border-dark">
+              Robin y Marshall comparten una amistad basada en el respeto y el apoyo mutuo.
+            </div>
+          </div>
+          <div class="collapse mb-2" id="robin-collapse-lily">
+            <div class="card card-body w-100 border border-3 border-dark">
+              Robin y Lily son inseparables amigas, con una relación llena de confianza y complicidad.
+            </div>
+          </div>
+          <div class="collapse" id="robin-collapse-barney">
+            <div class="card card-body w-100 border border-3 border-dark">
+              La relación de Robin y Barney evoluciona de la amistad a un romance complicado, con una conexión profunda.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
           <!-- Columna derecha: Imagen de Robin (4 columnas) -->
           <div
             class="col-md-4 d-flex align-items-center justify-content-center"
           >
             <img
-              src="img/robin.jpg"
+              src="img/robin/robin.jpg"
               class="img-fluid rounded m-2"
               alt="robin"
             />
