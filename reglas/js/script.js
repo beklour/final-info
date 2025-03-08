@@ -1,8 +1,8 @@
-// Variables para almacenar el puntaje y el resultado 
+// Variables para almacenar el puntaje y el resultado
 let puntos = 0;
 let resultados = 0;
 
-// Definición de preguntas
+// Array de preguntas: cada objeto representa una pregunta con su teoría, texto explicativo, opciones y la respuesta correcta
 let questions = [
   {
     teoría: 'Teoría de las Aceitunas',
@@ -156,58 +156,63 @@ let questions = [
   }
 ];
 
-// Función para calcular el resultado y actualizar el HTML
+// Función para calcular el resultado y actualizar el HTML con el porcentaje de aciertos
 function calcularResultado() {
-    // Calcula el porcentaje de aciertos basado en 25 preguntas
-    resultados = Math.round((puntos / 25) * 100);
-    const resultadoElement = document.querySelector('.card-text.resultado');
-    resultadoElement.innerHTML = `¡Felicitaciones! Acertaste el ${resultados}% de las veces.`;
-    resultadoElement.style.display = 'block';
-  }
-  
-// Función para manejar la selección de respuesta y bloquear botones de la card
+  // Se calcula el porcentaje basado en la cantidad total de preguntas
+  resultados = Math.round((puntos / 25) * 100);
+  const resultadoElement = document.querySelector('.card-text.resultado');
+  resultadoElement.innerHTML = `¡Felicitaciones! Acertaste el ${resultados}% de las veces.`;
+  // Se muestra el resultado
+  resultadoElement.style.display = 'block';
+}
+
+// Función para manejar la selección de respuesta en una card y bloquear todos sus botones
 function checkStaticAnswer(event, index) {
+  // Se obtiene la opción seleccionada a partir del atributo data-option
   const selectedOption = event.target.getAttribute('data-option');
+  // Se obtiene la respuesta correcta de la pregunta correspondiente
   const correctAnswer = questions[index].respuesta;
   const alertContainer = document.getElementById('alertContainer');
   
-  // Bloquear todos los botones de la card para evitar re-selecciones
+  // Se bloquean todos los botones de la card para evitar re-selecciones
   const card = event.target.closest('.card');
   const answerButtons = card.querySelectorAll('button[data-option]');
   answerButtons.forEach(button => {
     button.disabled = true;
   });
   
+  // Se muestra una alerta dependiendo de si la respuesta es correcta o incorrecta
   if (selectedOption === correctAnswer) {
-    puntos++; // Incrementa el puntaje en 1
-    alertContainer.innerHTML = `<div class="alert alert-success alert-dismissible fade show bg-custom" role="alert">
+    puntos++; // Se incrementa el puntaje
+    alertContainer.innerHTML = `<div class="alert alert-success alert-dismissible fade show bg-warning" role="alert">
       <strong>¡Acertaste!</strong>
       <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
     </div>`;
   } else {
-    alertContainer.innerHTML = `<div class="alert alert-warning alert-dismissible fade show bg-danger" role="alert">
+    alertContainer.innerHTML = `<div class="alert alert-warning alert-dismissible fade show bg-danger text-light" role="alert">
       <strong>¡Lo siento!</strong> La respuesta correcta era: ${correctAnswer}
       <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
     </div>`;
   }
 }
 
-// Listener para el botón "Ver Resultados"
+// Se agrega un listener para el botón "Ver Resultados" que llama a calcularResultado()
 document.getElementById("verResultados").addEventListener("click", function() {
   calcularResultado();
 });
 
-// Función para reiniciar el juego: habilitar botones, reiniciar variables y ocultar resultado
+// Función para reiniciar el juego: se reinician variables, se oculta el resultado y se re-habilitan los botones
 function reiniciarJuego() {
+  // Reinicia los puntajes y el resultado
   puntos = 0;
   resultados = 0;
   
-  // Ocultar y limpiar el texto de resultado
+  // Se oculta y limpia el contenido del elemento de resultado
   const resultadoElement = document.querySelector('.card-text.resultado');
   resultadoElement.innerHTML = "";
   resultadoElement.style.display = "none";
   
-  // Habilitar todos los botones de cada card
+  // Se re-habilitan todos los botones de cada card
   const allCards = document.querySelectorAll('.card');
   allCards.forEach(card => {
     const answerButtons = card.querySelectorAll('button[data-option]');
@@ -216,10 +221,10 @@ function reiniciarJuego() {
     });
   });
   
-  // Limpiar el contenedor de alertas
+  // Se limpia el contenedor de alertas
   const alertContainer = document.getElementById('alertContainer');
   alertContainer.innerHTML = "";
 }
 
-// Agregar listener para el botón "Reiniciar"
+// Se agrega un listener para el botón "Reiniciar" que llama a la función reiniciarJuego
 document.getElementById("reiniciar").addEventListener("click", reiniciarJuego);

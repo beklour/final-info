@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="css/estilos.css" />
     <title>CONTACTO</title>
   </head>
-  <body>
+  <body class="containerimg fs-6">
     <header>
 
       <nav class="navbar navbar-expand-lg navbar-light text-dark bg-custom fs-5">
@@ -77,11 +77,79 @@
     </nav>
     </header>
     
-    <main class="container">
+    <main class="container d-flex justify-content-center mt-7 mb-5">      
+      <div class="container text-center mt-5">
+        <div class="row">
+  
+      <!-- titulo -->
+  <div class="container d-flex justify-content-center mt-5">
+    <img src="img/contacto.png" class="d-block w-50" alt="reglas" />
+  </div>
+  <!-- titulo -->
 
 
+<!-- Contenedor principal -->
+<div class="container mt-5">
+  <!-- Título del formulario -->
+  <h1 class="text-center mb-4">FormSubmit Demo</h1>
+  <!-- Fila para centrar el contenido -->
+  <div class="row justify-content-center">
+    <!-- Columna responsiva: 100% en xs, 10/12 en sm y 8/12 en md+ -->
+    <div class="col-12 col-sm-10 col-md-8">
+      <!-- Formulario con validación de Bootstrap -->
+      <form class="needs-validation" novalidate target="_blank" action="https://formsubmit.co/8316e289c85f107b2650dc5a2ddce474" method="POST">
+        <div class="card mb-3">
+          <!-- Card header: contiene los inputs para email y nombre -->
+          <div class="card-header bg-custom">
+            <div class="row">
+              <!-- Input de email -->
+              <div class="col-md">
+                <div class="form-floating">
+                  <input type="email" class="form-control" id="floatingEmail" name="email" placeholder="name@example.com" value="mdo@example.com" required>
+                  <label for="floatingEmail">Email address</label>
+                  <div class="invalid-feedback">
+                    Por favor, ingresa un correo válido.
+                  </div>
+                </div>
+              </div>
+              <!-- Input de nombre -->
+              <div class="col-md">
+                <div class="form-floating">
+                  <input type="text" class="form-control" id="floatingName" name="name" aria-label="First name" value="Barney" required>
+                  <label for="floatingName">Name</label>
+                  <div class="invalid-feedback">
+                    Por favor, ingresa tu nombre.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Card body: contiene el slider, textarea y el botón de envío -->
+          <div class="card-body">
+            <!-- Slider para calificar el sitio -->
+            <div class="mb-3">
+              <label for="customRange2" class="form-label">Del 1 al 10, ¿Qué te pareció el sitio?</label>
+              <input type="range" class="form-range" min="0" max="10" id="customRange2" name="rating">
+            </div>
+            <!-- Textarea para dejar un comentario -->
+            <div class="mb-3">
+              <label for="exampleFormControlTextarea1" class="form-label fs-5 fw-medium">Deja un comentario sobre el sitio!</label>
+              <textarea class="form-control" id="exampleFormControlTextarea1" name="message" rows="3" required></textarea>
+              <div class="invalid-feedback">
+                Este campo es obligatorio.
+              </div>
+            </div>
+            <!-- Botón de envío -->
+            <button class="btn bg-custom btn-block" type="submit">Submit Form</button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
 
-      <h1>HOW I MET YOUR MOTHER</h1>
+ 
+
     </main>
     <footer class="container-fluid bg-custom">
       <section class="container text-center pt-2 pb-2">
@@ -115,7 +183,8 @@
         </div>
       </section>
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>   
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>  
+    <script src="js/script.js"></script>
 
   </body>
 </html>
