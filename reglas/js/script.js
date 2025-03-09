@@ -184,7 +184,7 @@ function checkStaticAnswer(event, index) {
   // Se muestra una alerta dependiendo de si la respuesta es correcta o incorrecta
   if (selectedOption === correctAnswer) {
     puntos++; // Se incrementa el puntaje
-    alertContainer.innerHTML = `<div class="alert alert-success alert-dismissible fade show bg-warning" role="alert">
+    alertContainer.innerHTML = `<div class="alert alert-success alert-dismissible fade show bg-success" role="alert">
       <strong>¡Acertaste!</strong>
       <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
     </div>`;
