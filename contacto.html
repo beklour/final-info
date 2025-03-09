@@ -31,11 +31,69 @@
           <div class="collapse navbar-collapse" id="navbarNav">
             <div class="navbar-nav">
               <a class="nav-item nav-link" href="index.html">HOME</a>
-              <a class="nav-item nav-link" href="personajes/index.html">PERSONAJES</a>
-              <a class="nav-item nav-link" href="novias/index.html">NOVIAS</a>
-              <a class="nav-item nav-link" href="reglas/index.html">REGLAS</a>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  PERSONAJES
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="personajes/index.html">¿QUIÉNES SON?</a></li>
+                  <li><a class="dropdown-item" href="personajes/relaciones.html">RELACIONES</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  NOVIAS
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="novias/index.html">LOS AMORES DE TED</a></li>
+                  <li><a class="dropdown-item" href="novias/robin.html">ROBIN</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  REGLAS
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="reglas/index.html">¿REGLAS?</a></li>
+                  <li><a class="dropdown-item" href="reglas/teorias.html">TEORIAS</a></li>
+                  <li><a class="dropdown-item" href="reglas/brocode.html">THE BROCODE</a></li>
+                  <li><a class="dropdown-item" href="reglas/playbook.html">THE PLAYBOOK</a></li>
+                </ul>
+              </li>
               <a class="nav-item nav-link" href="mother.html">LA MADRE</a>
-              <a class="nav-item nav-link" href="final/index.html">EL FINAL</a>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  EL FINAL
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="final/index.html">¿EL FINAL?</a></li>
+                  <li><a class="dropdown-item" href="final/finalt.html">FINAL ALTERNATIVO</a></li>
+                </ul>
+              </li>
               <a class="nav-item nav-link" href="recepcion.html">RECEPCIÓN</a>
             </div>
           </div>
@@ -48,7 +106,7 @@
         <div class="row">
           <!-- titulo -->
           <div class="container d-flex justify-content-center mt-5">
-            <img src="img/contacto.png" class="d-block w-50" alt="contacto">
+            <img src="img/contacto.png" class="d-block w-50" alt="reglas">
           </div>
           <!-- titulo -->
 
@@ -61,7 +119,7 @@
               <!-- Columna responsiva: 100% en xs, 10/12 en sm y 8/12 en md+ -->
               <div class="col-12 col-sm-10 col-md-8">
                 <!-- Formulario con validación de Bootstrap -->
-                <form name="contacto" class="needs-validation" data-netlify="true" action="#" novalidate method="POST">
+                <form name="contacto" class="needs-validation" data-netlify="true" action="/gracias.ht" novalidate method="POST">
                   <input type="hidden" name="form-name" value="contacto">
                   <div class="card mb-3">
                     <!-- Card header: contiene los inputs para email y nombre -->
@@ -89,8 +147,13 @@
                         </div>
                       </div>
                     </div>
-                    <!-- Card body: textarea y el botón de envío -->
+                    <!-- Card body: contiene el slider, textarea y el botón de envío -->
                     <div class="card-body">
+                      <!-- Slider para calificar el sitio -->
+                      <div class="mb-3">
+                        <label for="customRange2" class="form-label">Del 1 al 10, ¿Qué te pareció el sitio?</label>
+                        <input type="range" class="form-range" min="0" max="10" id="customRange2" name="rating">
+                      </div>
                       <!-- Textarea para dejar un comentario -->
                       <div class="mb-3">
                         <label for="exampleFormControlTextarea1" class="form-label fs-5 fw-medium">Deja un comentario sobre el sitio!</label>
